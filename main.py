@@ -28,7 +28,7 @@ def magic_link(email):
 
 
 
-col1 = st.columns(1)
+col1 = st.columns()
 with col1:
         with st.expander('Generate Magic Link'):
             email = st.text_input('Email', key='enter email address')
