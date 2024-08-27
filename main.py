@@ -26,13 +26,10 @@ def magic_link(email):
 
 
 
+form = st.form(key='Generate Magic Link')
+form.text_input(label='Enter your email address')
+submit_button = form.form_submit_button(label='Submit',  on_click='magic_link')
 
-
-col1 = st.columns(1)
-with col1:
-        with st.expander('Generate Magic Link'):
-            email = st.text_input('Email', key='enter email address')
-            generate_btn = st.button('Generate Magic Link', on_click=magic_link, args=(email))
                                      
 
 
