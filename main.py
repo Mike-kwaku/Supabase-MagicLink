@@ -27,8 +27,8 @@ def magic_link(email):
 
 
 form = st.form(key='Generate Magic Link')
-form.text_input(label='Enter your email address')
-submit_button = form.form_submit_button(label='Submit',  on_click='magic_link')
+form.text_input(label='Enter your email address for Magic Link')
+submit_button = form.form_submit_button(label='Submit',  on_click=magic_link, args=(email))
 
                                      
 
