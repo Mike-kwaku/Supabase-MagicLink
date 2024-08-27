@@ -17,7 +17,7 @@ def init_connection():
 supabase = init_connection()
 
 
-def magic_link(email)
+def magic_link(email):
    response = supabase.auth.sign_in_with_otp({
   'email': email})
   if response:
