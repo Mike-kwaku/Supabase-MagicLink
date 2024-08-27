@@ -18,11 +18,10 @@ supabase = init_connection()
 
 
 def magic_link(email):
-   response = supabase.auth.sign_in_with_otp({
-  'email': email})
-  if response:
+   response = supabase.auth.sign_in_with_otp({'email': email})
+   if response:
      st.success("check your email address for login link")
-  else:   
+   else:   
      st.warning("enter a valid email address or phone number") 
 
 
